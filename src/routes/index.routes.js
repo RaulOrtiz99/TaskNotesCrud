@@ -11,6 +11,9 @@ router.get("/about",(req,res)=>{ //ruta about
     res.render('about')
 });
 
+router.get("/edit",(req,res)=>{
+  res.render("edit")
+});
 
 
 export default router;

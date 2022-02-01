@@ -13,6 +13,7 @@ const exphbs = create({
     partialsDir: path.join(app.get("views"), "partials"),
     defaultLayout:'main'
   });
+  app.set("view engine",".hbs")
 
   app.engine(".hbs", exphbs.engine);
 
