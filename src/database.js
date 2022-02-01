@@ -1,1 +1,1 @@
-//archivo de configuracion para la bd 
+//archivo de configuracion para la bd  

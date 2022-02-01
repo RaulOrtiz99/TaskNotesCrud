@@ -4,11 +4,11 @@ const router = Router();
 //RUTAS
 
 router.get("/", (req, res) => { //ruta raiz
-  res.send("hola mundo cruel");
+  res.render('index')
 });
 
 router.get("/about",(req,res)=>{ //ruta about
-    res.send("about");
+    res.render('about')
 });
 
 
