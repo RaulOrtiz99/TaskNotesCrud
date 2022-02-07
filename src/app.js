@@ -19,7 +19,8 @@ const exphbs = create({
   app.engine(".hbs", exphbs.engine); 
   
   //middlewares 
-  app.use(morgan('dev'));
+  app.use(morgan('dev')); 
+  app.use(express.urlencoded({extended:false})); //este middleware es para que podamos usar el req.body
 
 
 //routes
