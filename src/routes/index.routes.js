@@ -3,17 +3,22 @@ const router = Router();
 
 //RUTAS
 
-router.get("/", (req, res) => { //ruta raiz
-  res.render('index')
+router.get("/", (req, res) => {
+  //ruta raiz
+  res.render("index");
 });
 
-router.get("/about",(req,res)=>{ //ruta about
-    res.render('about')
+router.post("/tasks/add", (req, res) => {//esto es un metodo post y  sirve para enviar al server informacion
+  res.send("Agregando tarea");
 });
 
-router.get("/edit",(req,res)=>{
-  res.render("edit")
+router.get("/about", (req, res) => {
+  //ruta about
+  res.render("about");
 });
 
+router.get("/edit", (req, res) => {
+  res.render("edit");
+});
 
 export default router;

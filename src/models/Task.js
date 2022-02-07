@@ -9,11 +9,18 @@ const taskSchema = new Schema(
       unique:true,
       trim:true  
     },
-    description: String,
-    done: Boolean,
+    description:{
+        type:String,
+        required:true
+    },
+    done:{
+        type:Boolean,
+        default:false
+    },
   },
   {
     timestamps: true,
+    versionKey:false
   }
 );
 
