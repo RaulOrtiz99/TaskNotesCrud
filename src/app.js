@@ -5,7 +5,7 @@ import path from "path"; //esto es para los directorios
 
 const app = express(); //esto es par usar express
 
-app.set("views", path.join(__dirname, "views"));
+app.set("views", path.join(__dirname, "views")); //configuraciones para renderizar las vistas
 
 const exphbs = create({
     extname: '.hbs',
